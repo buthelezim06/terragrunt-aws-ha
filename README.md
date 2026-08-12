@@ -93,3 +93,5 @@ join as **workers**, using SSM Parameter Store to hand off the join token
 - No HTTPS listener/cert wired up yet — add an `aws_lb_listener` on 443 with
   an ACM cert ARN once you have a domain.
 - `enable_deletion_protection` is only turned on for prod.
+
+<!-- GitHub Actions test -->
