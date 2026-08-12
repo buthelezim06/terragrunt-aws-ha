@@ -21,7 +21,7 @@ dependency "alb" {
 
   mock_outputs = {
     alb_sg_id         = "sg-mock"
-    target_group_arn  = "arn:aws:elasticloadbalancing:eu-west-1:000000000000:targetgroup/mock/0000000000000000"
+    target_group_arn  = "arn:aws:elasticloadbalancing:af-south-1:000000000000:targetgroup/mock/0000000000000000"
   }
   mock_outputs_allowed_terraform_commands = ["plan", "validate", "init"]
 }
