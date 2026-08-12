@@ -132,7 +132,7 @@ resource "aws_instance" "this" {
   # Every other instance polls SSM for that token and joins as a worker.
   user_data = templatefile("${path.module}/user_data.sh", {
     environment = var.environment
-    region      = data.aws_region.current.name
+    region      = data.aws_region.current.region
     is_manager  = count.index == 0 ? "true" : "false"
   })
 
